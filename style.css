@@ -1,19 +1,24 @@
 /* -------  General Styles ------- */
-
-body {
+/*body {
   font-family: "Lato", sans-serif;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}*/
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
 }
-
-h2 {
-  font-size: 26px;
-  font-weight: 400;
-  margin: 0 10px 10px 10px;
-  text-align: justify;
-}
-
-h3 {
-  font-size: 18px;
-  font-weight: 500;
+div {
+  width: 100%;
+  height: 100%;
+  max-height: 100%;
+  margin: 0;
+  padding: 0;
+  background-size:100% 100%;
+  background-repeat: no-repeat;
 }
 
 p {
@@ -31,14 +36,14 @@ section.alternate-background {
 }
 
 main img {
-  width: 100px;
+  width: 150px;
 }
 
 /* ---  Groups & Items --- */
 
 .group {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
 }
 
 .item {
@@ -48,6 +53,14 @@ main img {
 
 .item-double {
   flex: 1;
+}
+
+.ideas{
+  display: flex;
+}
+
+.stay{
+  align-content: space-evenly;
 }
 
 /* -------  Navigation ------- */
@@ -60,9 +73,6 @@ header {
 nav{
   display:flex;
   flex-direction: row;
-}
-main{
-  
 }
 
 .logo {
@@ -134,15 +144,19 @@ footer p {
     display: flex;
   }
   header h1{
-    font-size: 42px;
+    font-size: 32px;
     margin: 14px 0;
     padding-top: 6px;
   }
   header nav{
-    margin-top: 14px;
+    /*margin-top: 10px;*/
     flex-direction: row;
   }
   header nav ul li a:hover{
     color: #bdbdbd;
+  }
+  form{
+    display: flex;
+    flex-direction: row;
   }
 }
